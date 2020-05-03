@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfolio</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+
+	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" href="assets/styles/estilo.css">
+
+	<!-- External Links,Cdn,FontAwesome -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script defer src="/assets/scripts/app.js"></script>
+
+</head>
+
+<body>
+	<header>
+
+		<!--Create Nav bar-->
+		<nav>
+			<ul class="menu">
+				<li class="logo"><a href="/">Logo</a></li>
+				<li class="item "><a href="/" class="active" >Inicio</a></li>
+				<li class="item"><a href="/portfolio.html" class="">Portfolio</a></li>
+				<li class="item active"><a href="/presupuesto.html" class="">Presupuesto</a></li>
+				<li class="item"><a href="/maps.html" class="">Presupuesto</a></li>
+				<li class="item button"><a href="/contacto.html" class="">Contacto</a></li>
+				<li class="toggle"><span class="bars"></span></li>
+			</ul>
+		</nav>
+
+		<div class="banner">
+			<div class="banner-text">
+				<h1>Desarrollador Web</h1>
+				<h3>Alexandru Purdoiu</h3>
+			</div>
+			<div class="banner-btn">
+				<a href="#" class="btn">Aprende mas</a>
+			</div>
+
+		</div>
+
+	</header>
+
+	<section class="presupuesto-area">
+		<h2 class="header-text">Solicutud de Presupuesto</h3>
+			<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain 
+				was born and I will give you a complete account of the system, and expound the actual teachings 
+				of the great explorer of the truth, the master-builder of human happiness. No one rejects, 
+				dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not 
+				know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+				Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because 
+				it is pain, but because occasionally circumstances occur in which toil and pain can procure 
+				him some great pleasure. To take a trivial example, which of us ever undertakes laborious 
+				physical exercise, except to obtain some advantage from it? But who has any right to find 
+				fault with a man who chooses to enjoy a pleasure that has no annoying consequences, 
+				or one who avoids a pain that produces no resultant pleasure?"</p>
+		
+				<h3>Datos</h3>
+				<div class="details-area" >
+
+
+					<label for="name">Nombre: </label>
+					<input type="text" name="" id="name">
+					<br>
+					<label for="lname">Apellidos: </label>
+					<input type="text" name="" id="lname">
+
+					<br>
+					<label for="tlf">Telefono de contacto: </label>
+					<input type="tlf" name="" id="tlf">
+					<br>
+					<label for="email">Email: </label>
+					<input type="email" name="" id="email">
+
+				</div> 
+				<h3>Presupuesto</h3>
+
+				<br>
+				<br>
+				<div class="web-area" >
+					<form action="" class="form-area" method="post" id="form-presupuesto">
+					<fieldset>
+						<legend>Crea tu presupuesto</legend>
+						<p>Tipos de Webs:
+							<label><input type="radio" name="webs" value="500" checked="checked" /> Portfolio</label>
+							<label><input type="radio" name="webs" value="900" /> Web Corporativa</label>
+							<label><input type="radio" name="webs" value="1650.50" /> App Web</label>
+							<input type="hidden" name="webs_tot" value="0.00" />
+					</p>
+					
+						<br>
+						<br>
+						<br>
+
+					
+						<p id="webs_type">Caracteristicas:
+							<label><input type="checkbox" name="quienes" value="400" /> Quienes somos</label>
+							<label><input type="checkbox" name="donde" value="400" /> Donde Estamos</label>
+							<label><input type="checkbox" name="galeria" value="400" /> Galeria</label>
+							<label><input type="checkbox" name="comerce" value="400" /> eComerce</label>
+							<label><input type="checkbox" name="noticias" value="400" />  Noticias </label>
+							<label><input type="checkbox" name="facebook" value="400" /> Facebook </label>
+							<label><input type="checkbox" name="twitter" value="400" /> Twitter</label>
+							<input type="hidden" name="type_tot" value="0.00" />
+					</p>
+
+						<br>
+						<br>
+
+						<p>En meses:
+							<label><input type="radio" name="meses" value="0" checked="checked" />0</label>
+							<label><input type="radio" name="meses" value=".05" />1</label>
+							<label><input type="radio" name="meses" value=".10" /> 2</label>
+							<label><input type="radio" name="meses" value=".15" /> 3 </label>
+							<label><input type="radio" name="meses" value=".20" /> 4</label>
+							<input type="hidden" name="meses_tot" value="0.00" />
+						</p>
+
+						<p>
+							<label>Presupuesto Etimado: <input type="text" name="total" class="num" value="0.00"
+									readonly="readonly" /></label>
+								</p>
+						<!-- 					<p><input type="submit" name="submit" value="Submit" disabled /> (Submit button disabled for online demo)</p>
+ -->
+					</fieldset>
+				</div>
+				<br>
+
+			</form>
+		</section>
+			<!--Create Footer-->
+			<!-- /footer-->
+			<div class="footer">
+				<div class="footer-content">
+					<div class="social-icons">
+							<ul class="top-social-icons" list-unstyled>
+										<li> <a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+										<li> <a class="twitter simptip-position-bottom simptip-movable" data-tooltip="Twitter" href="#"> </a></li>
+										<li> <a class="pin simptip-position-bottom simptip-movable" data-tooltip="Pintrest" href="#"> </a> </li>
+										<li> <a class="youtube simptip-position-bottom simptip-movable" data-tooltip="Youtube" href="#"> </a> </li>
+										<li> <a class="vimeo simptip-position-bottom simptip-movable" data-tooltip="Vimeo" href="#"> </a> </li>
+											<div class="clearfix"> </div>  
+									</ul>
+					</div>
+							<div class="col-md-12 copy-right">
+								<p> &#169; 2020 All Rights Reserved | Template by &nbsp;<a href="/">Botick</a></p>
+							</div>
+				</div>
+			</div> 
+				<!-- //footer-->
+
+
+			<script type="text/javascript">
+				$(window).on("scroll", function () {
+					if ($(window).scrollTop()) {
+						$('nav').addClass('black');
+					} else {
+						$('nav').removeClass('black');
+					}
+				});
+
+				$(function () {
+					$('#contenido').load('contenido.html');
+				});
+				$(function () {
+					$('.toggle').on('click', function () {
+
+						if ($('.item').hasClass('active')) {
+							$('.item').removeClass('active');
+						} else {
+							$('.item').addClass('active');
+						}
+
+					});
+				});
+			</script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+<!-- 		
+			<span>Plazo de entrega: </span><select name="webs" id="webs">
+						<option>-Elije-</option>
+						<option value="5">Portfolio</option>
+						<option value="10">Web Corporativa</option>
+						<option value="15">App Web</option>
+
+					</select>
+				</div>
+ -->
+
+<!-- 	  <select name="webs" id="webs">
+	 <option >-Elije-</option>
+	 <option value="200">Portfolio</option>
+	 <option value="600">Web Corporativa</option>
+	 <option value="1200">App Web</option>
+	 <img src="" alt="">
+ </select> 
+-->

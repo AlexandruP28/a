@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfolio</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+
+	<!-- CSS Stylesheets -->
+
+	<link href="/assets/lightbox//css/lightbox.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/assets/styles/estilo.css">
+
+	<!-- External Links,Cdn,FontAwesome -->
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/assets/lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+	<header>
+
+		<!--Create Nav bar-->
+		<nav>
+			<ul class="menu">
+				<li class="logo"><a href="/">Logo</a></li>
+				<li class="item "><a href="/" class="" >Inicio</a></li>
+				<li class="item active"><a href="/portfolio.html" class="">Portfolio</a></li>
+				<li class="item"><a href="/presupuesto.html" class="">Presupuesto</a></li>
+				<li class="item"><a href="/maps.html" class="">Presupuesto</a></li>
+				<li class="item button"><a href="/contacto.html" class="">Contacto</a></li>
+				<li class="toggle"><span class="bars"></span></li>
+			</ul>
+		</nav>
+
+		<div class="banner">
+			<div class="banner-text">
+				<h1>Desarrollador Web</h1>
+				<h3>Alexandru Purdoiu</h3>
+			</div>
+			<div class="banner-btn">
+				<a href="#" class="btn">Aprende mas</a>
+			</div>
+
+		</div>
+
+	</header>
+
+
+	<section class="portafolio-area">
+		<div class="container text-center">
+
+			<h2 class="header-text">Our Works</h3>
+			<p>Lorem ipsum dolor sit amer, consectetur adipisicing.</p>
+
+			<div class="row">
+
+				<div class="col-md-3">
+					<a href="/assets/images/computer.webp" data-lightbox="portfolio" data-title="Mi computer">
+						<img src="/assets/images/computer.webp" class="img-fluid" alt="codigo javascript">
+					</a>
+				</div>
+
+
+				<div class="col-md-3">
+					<a href="/assets/images/architecture.webp" data-lightbox="portfolio" data-title="Mi casa">
+						<img src="/assets/images/architecture.webp" class="img-fluid" alt="casa con cocina">
+					</a>
+				</div>
+
+				<div class="col-md-3">
+					<a href="/assets/images/couch.webp" data-lightbox="portfolio" data-title="Mi imagen">
+						<img src="/assets/images/couch.webp" class="img-fluid" alt="interior sofa">
+					</a>
+				</div>
+
+
+				<div class="col-md-3">
+					<a href="/assets/images/laptop.png" data-lightbox="portfolio" data-title="Laptop">
+						<img src="/assets/images/laptop.png" class="img-fluid" alt="cafe laptop">
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+		<!--Create Footer-->
+			<!-- /footer-->
+			<div class="footer">
+				<div class="footer-content">
+					<div class="social-icons">
+							<ul class="top-social-icons" list-unstyled>
+										<li> <a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+										<li> <a class="twitter simptip-position-bottom simptip-movable" data-tooltip="Twitter" href="#"> </a></li>
+										<li> <a class="pin simptip-position-bottom simptip-movable" data-tooltip="Pintrest" href="#"> </a> </li>
+										<li> <a class="youtube simptip-position-bottom simptip-movable" data-tooltip="Youtube" href="#"> </a> </li>
+										<li> <a class="vimeo simptip-position-bottom simptip-movable" data-tooltip="Vimeo" href="#"> </a> </li>
+											<div class="clearfix"> </div>  
+									</ul>
+					</div>
+							<div class="col-md-12 copy-right">
+								<p> &#169; 2020 All Rights Reserved | Template by &nbsp;<a href="#">Botick</a></p>
+							</div>
+				</div>
+			</div> 
+				<!-- //footer-->
+
+	<script type="text/javascript">
+
+	 $(window).on("scroll", function () {
+		 if ($(window).scrollTop()) {
+			 $('nav').addClass('black');
+		 } else {
+			 $('nav').removeClass('black');
+		 }
+	 }); 
+
+	 $(function () {
+		 $('#contenido').load('contenido.html');
+	 });
+	 $(function () {
+		 $('.toggle').on('click', function () {
+
+			 if ($('.item').hasClass('active')) {
+				 $('.item').removeClass('active');
+			 } else {
+				 $('.item').addClass('active');
+			 }
+
+		 });
+	 });
+ </script>
+	<!-- 
+
+<script>
+	lightbox.option({
+		'resizeDuration': 200,
+		'wrapAround': true
+	});
+</script> -->
+
+</body>
+
+
+
+</html>

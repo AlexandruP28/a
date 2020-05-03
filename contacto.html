@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfolio</title>
+
+	<!-- Google Fonts -->
+	<script src="https://kit.fontawesome.com/dc733a74a5.js" crossorigin="anonymous"></script>
+
+	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" href="assets/styles/estilo.css">
+
+	<!-- External Links,Cdn,FontAwesome -->
+	<script  src="assets/scripts/app.js"></script>
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+
+		<!--Create Nav bar-->
+		<nav>
+			<ul class="menu">
+				<li class="logo"><a href="/">Logo</a></li>
+				<li class="item"><a href="/" class="">Inicio</a></li>
+				<li class="item"><a href="/portfolio.html" class="">Portfolio</a></li>
+				<li class="item"><a href="/presupuesto.html" class="">Presupuesto</a></li>
+				<li class="item"><a href="/maps.html" class="">Presupuesto</a></li>
+				<li class="item button active"><a href="/contacto.html" class="">Contacto</a></li>
+				<li class="toggle"><span class="bars"></span></li>
+			</ul>
+		</nav>
+
+		<div class="banner">
+			<div class="banner-text">
+				<h1>Desarrollador Web</h1>
+				<h3>Alexandru Purdoiu</h3>
+			</div>
+			<div class="banner-btn">
+				<a href="#" class="btn">Aprende mas</a>
+			</div>
+
+		</div>
+
+	</header>
+
+	<section class="contacto" id="contacto">
+		<h2 class="header-text">Contacto con nosotros</h3>
+		<div class="address">
+			<div class="inner-address">
+				<i class="fa fa-map-marker"></i>
+				<p>Barriada del castillo <br>Moguer, Huelva</p>
+			</div>
+			<div class="inner-address">
+				<i class="fa fa-envelope"></i>
+				<p>alexandru.purdoiu@gmail.com</p>
+			</div>
+			<div class="inner-address">
+				<i class="fa fa-phone"></i>
+				<p>+34 697 545 614</p>
+			</div>
+		</div>
+
+		<div class="form">
+			<div class="form-title">
+				Deja tu mensaje
+			</div>
+
+			<div class="input-form">
+				<div class="input">
+					<input type="text" placeholder="Nombre" required>
+				</div>
+				<div class="input">
+					<input type="text" placeholder="Apellidos" required>
+				</div>
+				<div class="input">
+					<input type="text" placeholder="Email" required>
+				</div>
+			</div>
+			<div class="input-contact">
+				<div class="input">
+					<input type="tlf" placeholder="Telefono" required>
+				</div>
+				<div class="input">
+					<input type="date">
+				</div>
+			</div>
+			<div class="inner-msg">
+				<div class="msg">
+					<textarea placeholder="Mensaje" required></textarea>
+				</div>
+			</div>
+
+			<div class="btn">
+				Enviar
+			</div>
+
+
+		</div>
+
+		<div class="social">
+			<div class="inner-social">
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+
+			<div class="inner-social">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-whatsapp"></i>
+				<i class="fab fa-google"></i>
+			</div>
+		</div>
+
+
+	</section>
+
+		<!--Create Footer-->
+			<!-- /footer-->
+			<div class="footer">
+				<div class="footer-content">
+					<div class="social-icons">
+							<ul class="top-social-icons" list-unstyled>
+										<li> <a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+										<li> <a class="twitter simptip-position-bottom simptip-movable" data-tooltip="Twitter" href="#"> </a></li>
+										<li> <a class="pin simptip-position-bottom simptip-movable" data-tooltip="Pintrest" href="#"> </a> </li>
+										<li> <a class="youtube simptip-position-bottom simptip-movable" data-tooltip="Youtube" href="#"> </a> </li>
+										<li> <a class="vimeo simptip-position-bottom simptip-movable" data-tooltip="Vimeo" href="#"> </a> </li>
+											<div class="clearfix"> </div>  
+									</ul>
+					</div>
+							<div class="col-md-12 copy-right">
+								<p> &#169; 2020 All Rights Reserved | Template by &nbsp;<a href="#">Botick</a></p>
+							</div>
+				</div>
+			</div> 
+				<!-- //footer-->
+
+
+		<script type="text/javascript">
+		
+			$(window).on("scroll", function () {
+				if ($(window).scrollTop()) {
+					$('nav').addClass('black');
+				} else {
+					$('nav').removeClass('black');
+				}
+			}); 
+
+			$(function () {
+				$('#contenido').load('contenido.html');
+			});
+			$(function () {
+				$('.toggle').on('click', function () {
+
+					if ($('.item').hasClass('active')) {
+						$('.item').removeClass('active');
+					} else {
+						$('.item').addClass('active');
+					}
+
+				});
+			});
+	
+			$(function () {
+		$(document).ready(function () {
+			$('.btn').click(function () {
+				$('.input input,.msg textarea').val('');
+			});
+		});
+	});
+	</script>
+
+</body>
+
+
+</html>
